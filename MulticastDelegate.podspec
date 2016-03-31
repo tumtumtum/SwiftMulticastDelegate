@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.ios.deployment_target = '8.0'
   s.ios.frameworks   = 'CoreFoundation'
-  s.osx.deployment_target = '10.7'
+  s.osx.deployment_target = '10.8'
   s.osx.frameworks = 'CoreFoundation'
   s.watchos.deployment_target = '2.0'
   s.watchos.frameworks   = 'CoreFoundation'
