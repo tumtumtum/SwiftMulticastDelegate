@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/tumtumtum/MulticastDelegate.git", :tag => s.version.to_s}
   s.platform     = :ios
   s.requires_arc = true
-  s.ios.deployment_target = '5.1'
+  s.ios.deployment_target = '8.0'
   s.ios.frameworks   = 'CoreFoundation'
   s.osx.deployment_target = '10.7'
   s.osx.frameworks = 'CoreFoundation'
