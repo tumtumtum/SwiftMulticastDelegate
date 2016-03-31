@@ -79,3 +79,6 @@ button.onClick()
 ```
 
 Try the full example in a Swift [Sandbox](http://swiftlang.ng.bluemix.net/#/repl/4bc9593d704dcad4ae569dafdbfb3100c83671c0886419d88cfe2f4fac9ef834)
+
+
+Copyright (c) Thong Nguyen (tumtumtum@gmail.com) 2016
