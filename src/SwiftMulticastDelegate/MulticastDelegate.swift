@@ -8,7 +8,7 @@
 
 import Foundation
 
-func += <T> (inout left: MulticastDelegate<T>?, right: T)
+public func += <T> (inout left: MulticastDelegate<T>?, right: T)
 {
 	if left != nil
 	{
@@ -20,7 +20,7 @@ func += <T> (inout left: MulticastDelegate<T>?, right: T)
 	}
 }
 
-func -= <T> (inout left: MulticastDelegate<T>?, right: T)
+public func -= <T> (inout left: MulticastDelegate<T>?, right: T)
 {
 	if left != nil
 	{
@@ -30,7 +30,7 @@ func -= <T> (inout left: MulticastDelegate<T>?, right: T)
 
 infix operator => {}
 
-func => <T> (inout left: MulticastDelegate<T>?, invocation: (T) -> ())
+public func => <T> (inout left: MulticastDelegate<T>?, invocation: (T) -> ())
 {
 	if left != nil
 	{
@@ -59,7 +59,7 @@ private func ==(lhs: WeakRef, rhs: WeakRef) -> Bool
 	return lhs.value === rhs.value
 }
 
-class MulticastDelegate<T>
+public public class MulticastDelegate<T>
 {
 	private var delegates: [WeakRef]
 	
