@@ -16,7 +16,7 @@ var delegate: MulticastDelegate<ButtonDelegate>?
 
 ### Invoking a delegate method
 
-Invoke a delegate callback by using the overloaded `=>` operator on the delegate. The first argument of the block is the delegate. The block will be invoked for each delegate that has registered.
+Invoke a delegate callback by using the overloaded `=>` operator and passing in a block that will retrieve a delegate protocol reference.
 
 ```swift
 self.delegate => { $0.click() }
@@ -24,7 +24,7 @@ self.delegate => { $0.click() }
 
 ### Registering and unregistering for callbacks
 
-You can register or unregister for callbacks using the overloaded `+=` and `-=` operators.
+You can register/unregister for callbacks using the overloaded `+=` and `-=` operators.
 
 ```swift
 obj.delegate += { print "callback!" }
