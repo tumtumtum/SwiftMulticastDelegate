@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name         = "MulticastDelegate"
-  s.version      = "0.1.0"
+  s.version      = "0.1.3"
   s.summary      = "A safe and efficient implementation of multicast delegates for Swift"
   s.homepage     = "https://github.com/tumtumtum/MulticastDelegate/"
   s.license      = 'MIT'
   s.author       = { "Thong Nguyen" => "tumtumtum@gmail.com" }
-  s.source       = { :git => "https://github.com/tumtumtum/MulticastDelegate.git", :tag => s.version.to_s}
+  s.source       = { :git => "https://github.com/tumtumtum/SwiftMulticastDelegate.git", :tag => s.version.to_s}
   s.platform     = :ios
   s.requires_arc = true
   s.ios.deployment_target = '8.0'
@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
   s.osx.frameworks = 'CoreFoundation'
   s.watchos.deployment_target = '2.0'
   s.watchos.frameworks   = 'CoreFoundation'
-  s.source_files = 'src/MulticastDelegate/**/*.swift'
+  s.source_files = 'src/SwiftMulticastDelegate/**/*.swift'
 end
