@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SwiftMulticastDelegate"
-  s.version      = "0.1.6"
+  s.version      = "0.1.7"
   s.summary      = "A safe and efficient implementation of multicast delegates for Swift"
   s.homepage     = "https://github.com/tumtumtum/SwiftMulticastDelegate/"
   s.license      = 'MIT'
