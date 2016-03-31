@@ -59,7 +59,7 @@ private func ==(lhs: WeakRef, rhs: WeakRef) -> Bool
 	return lhs.value === rhs.value
 }
 
-public public class MulticastDelegate<T>
+public class MulticastDelegate<T>
 {
 	private var delegates: [WeakRef]
 	
