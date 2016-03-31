@@ -77,3 +77,5 @@ let window = Window()
 
 window.button.onClick()
 ```
+
+Try the full example in a Swift [Sandbox](http://swiftlang.ng.bluemix.net/#/repl/b2a4b280085c693e023ccd2ad45bedae3b0abf24736bddf84aa12479a2b39e82)
