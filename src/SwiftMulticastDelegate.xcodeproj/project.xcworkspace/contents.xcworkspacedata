@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MulticastDelegate.xcodeproj">
+      location = "self:/Users/tum/Projects/SwiftMulticastDelegate/src/SwiftMulticastDelegate.xcodeproj">
    </FileRef>
 </Workspace>
