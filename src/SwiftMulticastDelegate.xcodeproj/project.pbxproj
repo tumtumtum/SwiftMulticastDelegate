@@ -7,24 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A160FA481CAD92D200CB3F33 /* SwiftMulticastDelegate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A160FA3E1CAD92D200CB3F33 /* SwiftMulticastDelegate.framework */; };
 		A191F9151CAD769100C3EE26 /* SwiftMulticastDelegate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A191F90A1CAD769100C3EE26 /* SwiftMulticastDelegate.framework */; };
 		A1B4E43E1CAD955300EEC249 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B4E43C1CAD955300EEC249 /* MulticastDelegate.swift */; };
 		A1B4E4491CAD95DE00EEC249 /* MulticastDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B4E4401CAD956000EEC249 /* MulticastDelegateTests.swift */; };
-		A1B4E44A1CAD95E200EEC249 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B4E43C1CAD955300EEC249 /* MulticastDelegate.swift */; };
-		A1B4E44B1CAD95E400EEC249 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B4E43C1CAD955300EEC249 /* MulticastDelegate.swift */; };
-		A1B4E44C1CAD95E400EEC249 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B4E43C1CAD955300EEC249 /* MulticastDelegate.swift */; };
-		A1B4E44D1CAD95E800EEC249 /* MulticastDelegateMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B4E4441CAD956F00EEC249 /* MulticastDelegateMacTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A160FA491CAD92D200CB3F33 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A191F9011CAD769100C3EE26 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A160FA3D1CAD92D200CB3F33;
-			remoteInfo = MulticastDelegateMac;
-		};
 		A191F9161CAD769100C3EE26 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A191F9011CAD769100C3EE26 /* Project object */;
@@ -35,35 +23,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A160FA3E1CAD92D200CB3F33 /* SwiftMulticastDelegate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMulticastDelegate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A160FA471CAD92D200CB3F33 /* SwiftMulticastDelegate.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftMulticastDelegate.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A191F90A1CAD769100C3EE26 /* SwiftMulticastDelegate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMulticastDelegate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A191F9141CAD769100C3EE26 /* SwiftMulticastDelegate.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftMulticastDelegate.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B4E43B1CAD955300EEC249 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SwiftMulticastDelegate/Info.plist; sourceTree = SOURCE_ROOT; };
 		A1B4E43C1CAD955300EEC249 /* MulticastDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MulticastDelegate.swift; path = SwiftMulticastDelegate/MulticastDelegate.swift; sourceTree = SOURCE_ROOT; };
 		A1B4E43F1CAD956000EEC249 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SwiftMulticastDelegateTests/Info.plist; sourceTree = SOURCE_ROOT; };
 		A1B4E4401CAD956000EEC249 /* MulticastDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MulticastDelegateTests.swift; path = SwiftMulticastDelegateTests/MulticastDelegateTests.swift; sourceTree = SOURCE_ROOT; };
-		A1B4E4431CAD956F00EEC249 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SwiftMulticastDelegateMacTests/Info.plist; sourceTree = SOURCE_ROOT; };
-		A1B4E4441CAD956F00EEC249 /* MulticastDelegateMacTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MulticastDelegateMacTests.swift; path = SwiftMulticastDelegateMacTests/MulticastDelegateMacTests.swift; sourceTree = SOURCE_ROOT; };
-		A1B4E4471CAD957E00EEC249 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SwiftMulticastDelegateMac/Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A160FA3A1CAD92D200CB3F33 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A160FA441CAD92D200CB3F33 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A160FA481CAD92D200CB3F33 /* SwiftMulticastDelegate.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A191F9061CAD769100C3EE26 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,32 +50,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A160FA3F1CAD92D200CB3F33 /* SwiftMulticastDelegateMac */ = {
-			isa = PBXGroup;
-			children = (
-				A1B4E4471CAD957E00EEC249 /* Info.plist */,
-			);
-			name = SwiftMulticastDelegateMac;
-			path = MulticastDelegateMac;
-			sourceTree = "<group>";
-		};
-		A160FA4B1CAD92D200CB3F33 /* SwiftMulticastDelegateMacTests */ = {
-			isa = PBXGroup;
-			children = (
-				A1B4E4431CAD956F00EEC249 /* Info.plist */,
-				A1B4E4441CAD956F00EEC249 /* MulticastDelegateMacTests.swift */,
-			);
-			name = SwiftMulticastDelegateMacTests;
-			path = MulticastDelegateMacTests;
-			sourceTree = "<group>";
-		};
 		A191F9001CAD769100C3EE26 = {
 			isa = PBXGroup;
 			children = (
 				A191F90C1CAD769100C3EE26 /* SwiftMulticastDelegate */,
 				A191F9181CAD769100C3EE26 /* SwiftMulticastDelegateTests */,
-				A160FA3F1CAD92D200CB3F33 /* SwiftMulticastDelegateMac */,
-				A160FA4B1CAD92D200CB3F33 /* SwiftMulticastDelegateMacTests */,
 				A191F90B1CAD769100C3EE26 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,8 +64,6 @@
 			children = (
 				A191F90A1CAD769100C3EE26 /* SwiftMulticastDelegate.framework */,
 				A191F9141CAD769100C3EE26 /* SwiftMulticastDelegate.xctest */,
-				A160FA3E1CAD92D200CB3F33 /* SwiftMulticastDelegate.framework */,
-				A160FA471CAD92D200CB3F33 /* SwiftMulticastDelegate.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,13 +91,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A160FA3B1CAD92D200CB3F33 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A191F9071CAD769100C3EE26 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,42 +101,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A160FA3D1CAD92D200CB3F33 /* SwiftMulticastDelegateMac */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A160FA531CAD92D200CB3F33 /* Build configuration list for PBXNativeTarget "SwiftMulticastDelegateMac" */;
-			buildPhases = (
-				A160FA391CAD92D200CB3F33 /* Sources */,
-				A160FA3A1CAD92D200CB3F33 /* Frameworks */,
-				A160FA3B1CAD92D200CB3F33 /* Headers */,
-				A160FA3C1CAD92D200CB3F33 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftMulticastDelegateMac;
-			productName = MulticastDelegateMac;
-			productReference = A160FA3E1CAD92D200CB3F33 /* SwiftMulticastDelegate.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A160FA461CAD92D200CB3F33 /* SwiftMulticastDelegateMacTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A160FA541CAD92D200CB3F33 /* Build configuration list for PBXNativeTarget "SwiftMulticastDelegateMacTests" */;
-			buildPhases = (
-				A160FA431CAD92D200CB3F33 /* Sources */,
-				A160FA441CAD92D200CB3F33 /* Frameworks */,
-				A160FA451CAD92D200CB3F33 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A160FA4A1CAD92D200CB3F33 /* PBXTargetDependency */,
-			);
-			name = SwiftMulticastDelegateMacTests;
-			productName = MulticastDelegateMacTests;
-			productReference = A160FA471CAD92D200CB3F33 /* SwiftMulticastDelegate.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		A191F9091CAD769100C3EE26 /* SwiftMulticastDelegate */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A191F91E1CAD769100C3EE26 /* Build configuration list for PBXNativeTarget "SwiftMulticastDelegate" */;
@@ -245,12 +147,6 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "King Street Apps Limited";
 				TargetAttributes = {
-					A160FA3D1CAD92D200CB3F33 = {
-						CreatedOnToolsVersion = 7.3;
-					};
-					A160FA461CAD92D200CB3F33 = {
-						CreatedOnToolsVersion = 7.3;
-					};
 					A191F9091CAD769100C3EE26 = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -273,27 +169,11 @@
 			targets = (
 				A191F9091CAD769100C3EE26 /* SwiftMulticastDelegate */,
 				A191F9131CAD769100C3EE26 /* SwiftMulticastDelegateTests */,
-				A160FA3D1CAD92D200CB3F33 /* SwiftMulticastDelegateMac */,
-				A160FA461CAD92D200CB3F33 /* SwiftMulticastDelegateMacTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A160FA3C1CAD92D200CB3F33 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A160FA451CAD92D200CB3F33 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A191F9081CAD769100C3EE26 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -311,23 +191,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A160FA391CAD92D200CB3F33 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1B4E44B1CAD95E400EEC249 /* MulticastDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A160FA431CAD92D200CB3F33 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1B4E44C1CAD95E400EEC249 /* MulticastDelegate.swift in Sources */,
-				A1B4E44D1CAD95E800EEC249 /* MulticastDelegateMacTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A191F9051CAD769100C3EE26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -341,18 +204,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1B4E4491CAD95DE00EEC249 /* MulticastDelegateTests.swift in Sources */,
-				A1B4E44A1CAD95E200EEC249 /* MulticastDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A160FA4A1CAD92D200CB3F33 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A160FA3D1CAD92D200CB3F33 /* SwiftMulticastDelegateMac */;
-			targetProxy = A160FA491CAD92D200CB3F33 /* PBXContainerItemProxy */;
-		};
 		A191F9171CAD769100C3EE26 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A191F9091CAD769100C3EE26 /* SwiftMulticastDelegate */;
@@ -361,76 +218,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		A160FA4F1CAD92D200CB3F33 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/SwiftMulticastDelegateMac/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kingstreetapps.MulticastDelegateMac;
-				PRODUCT_NAME = SwiftMulticastDelegate;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		A160FA501CAD92D200CB3F33 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/SwiftMulticastDelegateMac/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kingstreetapps.MulticastDelegateMac;
-				PRODUCT_NAME = SwiftMulticastDelegate;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		A160FA511CAD92D200CB3F33 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = MulticastDelegateMacTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kingstreetapps.MulticastDelegateMacTests;
-				PRODUCT_NAME = SwiftMulticastDelegate;
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		A160FA521CAD92D200CB3F33 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = MulticastDelegateMacTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kingstreetapps.MulticastDelegateMacTests;
-				PRODUCT_NAME = SwiftMulticastDelegate;
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
 		A191F91C1CAD769100C3EE26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -533,7 +320,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftMulticastDelegate/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kingstreetapps.MulticastDelegate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingstreetapps.SwiftMulticastDelegate;
 				PRODUCT_NAME = SwiftMulticastDelegate;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -551,7 +338,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftMulticastDelegate/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kingstreetapps.MulticastDelegate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingstreetapps.SwiftMulticastDelegate;
 				PRODUCT_NAME = SwiftMulticastDelegate;
 				SKIP_INSTALL = YES;
 			};
@@ -560,9 +347,9 @@
 		A191F9221CAD769100C3EE26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = MulticastDelegateTests/Info.plist;
+				INFOPLIST_FILE = SwiftMulticastDelegateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kingstreetapps.MulticastDelegateTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingstreetapps.SwiftMulticastDelegateTests;
 				PRODUCT_NAME = SwiftMulticastDelegate;
 			};
 			name = Debug;
@@ -570,9 +357,9 @@
 		A191F9231CAD769100C3EE26 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = MulticastDelegateTests/Info.plist;
+				INFOPLIST_FILE = SwiftMulticastDelegateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kingstreetapps.MulticastDelegateTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingstreetapps.SwiftMulticastDelegateTests;
 				PRODUCT_NAME = SwiftMulticastDelegate;
 			};
 			name = Release;
@@ -580,24 +367,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A160FA531CAD92D200CB3F33 /* Build configuration list for PBXNativeTarget "SwiftMulticastDelegateMac" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A160FA4F1CAD92D200CB3F33 /* Debug */,
-				A160FA501CAD92D200CB3F33 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A160FA541CAD92D200CB3F33 /* Build configuration list for PBXNativeTarget "SwiftMulticastDelegateMacTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A160FA511CAD92D200CB3F33 /* Debug */,
-				A160FA521CAD92D200CB3F33 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		A191F9041CAD769100C3EE26 /* Build configuration list for PBXProject "SwiftMulticastDelegate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

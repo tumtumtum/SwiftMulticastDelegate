@@ -7,12 +7,12 @@
 //
 
 import XCTest
-import MulticastDelegate
-@testable import MulticastDelegate
+
+@testable import SwiftMulticastDelegate
 
 protocol ButtonDelegate
 {
-	func clicked()
+	func clicked(sender: Button)
 }
 
 class Button
