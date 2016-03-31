@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
-  s.name         = "MulticastDelegate"
+  s.name         = "SwiftMulticastDelegate"
   s.version      = "0.1.3"
   s.summary      = "A safe and efficient implementation of multicast delegates for Swift"
-  s.homepage     = "https://github.com/tumtumtum/MulticastDelegate/"
+  s.homepage     = "https://github.com/tumtumtum/SwiftMulticastDelegate/"
   s.license      = 'MIT'
   s.author       = { "Thong Nguyen" => "tumtumtum@gmail.com" }
   s.source       = { :git => "https://github.com/tumtumtum/SwiftMulticastDelegate.git", :tag => s.version.to_s}
