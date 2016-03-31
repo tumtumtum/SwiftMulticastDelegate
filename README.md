@@ -4,7 +4,7 @@ Multicast delegate support for Swift
 
 A clean and easy to use implementation of multicast delegates for Swift.
 
-Installation by adding "pod SwiftMulticastDelegate" to your podfile or simply by copying `MulticastDelegate.swift` into your project.
+Installation by adding "SwiftMulticastDelegate" to your Podfile and then importing SwiftMulticastDelegate in your source files. Alternatively you can simply copy `MulticastDelegate.swift` into your project.
 
 ### Declaring a delegate property
 
