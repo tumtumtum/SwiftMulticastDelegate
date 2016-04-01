@@ -6,6 +6,19 @@ A clean and easy to use implementation of multicast delegates for Swift.
 
 Installation by adding "SwiftMulticastDelegate" to your Podfile and then importing SwiftMulticastDelegate in your source files. Alternatively you can simply copy `MulticastDelegate.swift` into your project.
 
+### Features
+
+- 100% swift
+- Generic and type-safe
+- Delegates are weakly retained
+- MulticastDelegate property does not need to be weak
+- MulticastDelegate property is nil if there are no listeners
+- No need to check for `nil` when invoking callbacks using the `=>` operator
+- Same semantics as C# multicast delegates including:
+   - Immutable delegate lists
+   - Multiple registrations permitted for the same instance
+   - Efficient `nil` delegate property when there are no listeners
+
 ### Declaring a delegate property
 
 Declare a delegate property by declaring an optional var property of type MulticastDelegate<T> where T is your delegate protocol. The property should not be weak.
