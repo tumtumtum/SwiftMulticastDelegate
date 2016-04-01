@@ -27,7 +27,7 @@ self.delegate => { $0.click() }
 You can register/unregister for callbacks using the overloaded `+=` and `-=` operators.
 
 ```swift
-obj.delegate += { print "callback!" }
+obj.delegate += listener
 ```
 
 ### Full Example
