@@ -12,7 +12,7 @@ import XCTest
 
 protocol ButtonDelegate
 {
-	func clicked(sender: Button)
+	func clicked(_ sender: Button)
 }
 
 class Button

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public func += <T> (inout left: MulticastDelegate<T>?, right: T)
+public func += <T> (left: inout MulticastDelegate<T>?, right: T)
 {
 	if left != nil
 	{
@@ -20,7 +20,7 @@ public func += <T> (inout left: MulticastDelegate<T>?, right: T)
 	}
 }
 
-public func -= <T> (inout left: MulticastDelegate<T>?, right: T)
+public func -= <T> (left: inout MulticastDelegate<T>?, right: T)
 {
 	if left != nil
 	{
@@ -30,7 +30,7 @@ public func -= <T> (inout left: MulticastDelegate<T>?, right: T)
 
 infix operator => {}
 
-public func => <T> (inout left: MulticastDelegate<T>?, invocation: (T) -> ())
+public func => <T> (left: inout MulticastDelegate<T>?, invocation: (T) -> ())
 {
 	if left != nil
 	{
@@ -82,7 +82,7 @@ public class MulticastDelegate<T>
 		self.delegates = copy
 	}
 	
-	static func addDelegate(multicastDelegate: MulticastDelegate<T>, delegate: T) -> MulticastDelegate<T>?
+	static func addDelegate(_ multicastDelegate: MulticastDelegate<T>, delegate: T) -> MulticastDelegate<T>?
 	{
 		if let delegate = delegate as? AnyObject
 		{
@@ -92,9 +92,9 @@ public class MulticastDelegate<T>
 		return multicastDelegate
 	}
 	
-	static func removeDelegate(multicastDelegate: MulticastDelegate<T>, delegate: T) -> MulticastDelegate<T>?
+	static func removeDelegate(_ multicastDelegate: MulticastDelegate<T>, delegate: T) -> MulticastDelegate<T>?
 	{
-		for (index, ref) in multicastDelegate.delegates.enumerate()
+		for (index, ref) in multicastDelegate.delegates.enumerated()
 		{
 			if ref.value === delegate as? AnyObject
 			{
@@ -107,7 +107,7 @@ public class MulticastDelegate<T>
 				
 				if multicastDelegate.delegates.count - index - 1 > 0
 				{
-					newDelegates.appendContentsOf(multicastDelegate.delegates[index + 1..<multicastDelegate.delegates.count])
+					newDelegates.append(contentsOf: multicastDelegate.delegates[index + 1..<multicastDelegate.delegates.count])
 				}
 				
 				return MulticastDelegate<T>(delegates: newDelegates)
@@ -117,11 +117,11 @@ public class MulticastDelegate<T>
 		return multicastDelegate
 	}
 	
-	static func invoke(multicastDelegate: MulticastDelegate<T>, invocation: (T) -> ()) -> MulticastDelegate<T>?
+	static func invoke(_ multicastDelegate: MulticastDelegate<T>, invocation: (T) -> ()) -> MulticastDelegate<T>?
 	{
 		var newDelegates: Array<WeakRef>? = nil
 		
-		for (index, ref) in multicastDelegate.delegates.enumerate()
+		for (index, ref) in multicastDelegate.delegates.enumerated()
 		{
 			if let delegate = ref.value
 			{
