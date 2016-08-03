@@ -10,9 +10,9 @@ import XCTest
 
 @testable import SwiftMulticastDelegate
 
-protocol ButtonDelegate
+protocol ButtonDelegate: class
 {
-	func clicked(sender: Button)
+	func clicked()
 }
 
 class Button
@@ -101,5 +101,38 @@ class MulticastDelegateTests: XCTestCase
 		button2.click()
 		XCTAssert(view1.count == count1 + 7)
 		XCTAssert(view2.count == count2 + 8)
+    }
+    
+    func test2()
+    {
+        let button1 = Button()
+        var view1: View! = View()
+        var view2: View! = View()
+        var view1count: Int
+        var view2count: Int
+        
+        button1.delegate += view1
+        button1.delegate += view2
+        
+        button1.click()
+        
+        XCTAssert(button1.delegate !== nil)
+        
+        view1count = view1.count
+        view1 = nil
+        
+        button1.click()
+        
+        XCTAssert(button1.delegate !== nil)
+        
+        view2count = view2.count
+        view2 = nil
+        
+        button1.click()
+        
+        XCTAssert(button1.delegate === nil)
+        
+        XCTAssert(view1count == 1)
+        XCTAssert(view2count == 2)
     }
 }

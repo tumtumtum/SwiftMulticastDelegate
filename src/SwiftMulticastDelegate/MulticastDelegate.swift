@@ -32,12 +32,11 @@ infix operator => {}
 
 public func => <T> (inout left: MulticastDelegate<T>?, invocation: (T) -> ())
 {
-	if left != nil
+	if let originalleft = left
 	{
-		let old = left
-		let cleaned = MulticastDelegate<T>.invoke(left!, invocation: invocation)
+        let cleaned = MulticastDelegate<T>.invoke(originalleft, invocation: invocation)
 		
-		if old === left
+		if let currentleft = left where originalleft === currentleft
 		{
 			left = cleaned
 		}
@@ -119,6 +118,7 @@ public class MulticastDelegate<T>
 	
 	static func invoke(multicastDelegate: MulticastDelegate<T>, invocation: (T) -> ()) -> MulticastDelegate<T>?
 	{
+        var hasNewDelegates = false
 		var newDelegates: Array<WeakRef>? = nil
 		
 		for (index, ref) in multicastDelegate.delegates.enumerate()
@@ -131,12 +131,21 @@ public class MulticastDelegate<T>
 				{
 					newDelegates.append(ref)
 				}
+                else if hasNewDelegates
+                {
+                    newDelegates = Array.init(arrayLiteral: ref)
+                }
 			}
 			else
 			{
-				if newDelegates == nil && index > 0
+				if newDelegates == nil
 				{
-					newDelegates = Array(multicastDelegate.delegates[0..<index])
+                    hasNewDelegates = true
+                    
+                    if index > 0
+                    {
+                        newDelegates = Array(multicastDelegate.delegates[0..<index])
+                    }
 				}
 			}
 		}
@@ -145,6 +154,10 @@ public class MulticastDelegate<T>
 		{
 			return MulticastDelegate<T>(delegates: newDelegates)
 		}
+        else if hasNewDelegates
+        {
+            return nil
+        }
 		
 		return multicastDelegate
 	}
